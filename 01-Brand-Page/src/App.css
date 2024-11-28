@@ -1,42 +1,96 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --red: #D01C28;
+    --gray: #2e2e2e;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+* {
+    margin: 0;
+    font-weight: bold;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+    font-family: "Poppins", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+button {
+    all: unset;
+    padding: 6px 16px;
+    background: red;
+    border-radius: 7px;
+    height: 32px;
+    color: white;
+    font-weight: 500;
 }
 
-.card {
-  padding: 2em;
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
 }
 
-.read-the-docs {
-  color: #888;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
 }
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 72px);
+    max-width: 1150px;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    
+}
+
+.hero h1{
+    font-size: 108px;
+    font-weight: 900;
+    line-height: 102px;
+}
+
+.hero p{
+    font-weight: 600;
+    color: var(--gray);
+    max-width: 400px;
+}
+
+.hero button{
+    font-size: 24px;
+}
+
+.hero-btn{
+    display: flex;
+    gap: 40px;
+}
+
+.secondary-btn{
+    background: transparent;
+    color: var(--gray);
+    border: 2px solid var(--gray);
+}
+
+.shopping p{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.shops{
+    display: flex;
+    gap: 16px;
+}
+
